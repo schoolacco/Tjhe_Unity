@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Placeholder_Platformer.sln"
+    "dotnet.defaultSolution": "Tjhe_Unity.sln"
 }
