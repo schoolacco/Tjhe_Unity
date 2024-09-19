@@ -49,7 +49,7 @@ public class Player : MonoBehaviour
         float playerYPosition = transform.position.y;
         if (playerYPosition < -100)  //Check if the player has fallen below a certain position on the screen and return to the Splash Screen if true
         {
-            SceneManager.LoadScene("SplashScreen");
+            SceneManager.LoadScene("GameOver");
         }
     
         if (absVelY <= standingThreshold) //Check if the player is standing on the ground or not

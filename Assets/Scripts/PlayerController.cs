@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    
+    public AudioSource keysound;
     public Vector2 moving = new Vector2(); // Public variable to store player's movement direction
 
     // Start is called before the first frame update
@@ -35,6 +35,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey("up") || Input.GetKey("w") || Input.GetKey("space")){
             // Set the y component of the movement vector to 1 (upward direction)
             moving.y = 1;
+            keysound.Play();
         }
 
         // Check if the down arrow key or 'S' key is pressed
