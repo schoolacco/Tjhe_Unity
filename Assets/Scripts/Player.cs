@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
     private bool canJump = false;
 
     AudioSource audioData;
-    
+    public AudioSource keysound;
   /*//Starts before the first frame. Gets the RigidBody2D, SpriteRenderer, PlayerController 
   and Animator from the Player sprite and stores them in relevant variables*/
     void Start() 
@@ -59,14 +59,14 @@ public class Player : MonoBehaviour
 
             if (controller.moving.y > 0 && !isJumping && canJump)  // Check if the player is moving upwards and allow jumping
             {
-                //audioData.Play(0);
+                
+                
                 isJumping = true;
                 canJump = false; //Prevent multiple jumps until landing.
                 
                 forceY = jetSpeed * controller.moving.y;
                 animator.SetInteger("AnimState", 2);
                 
-
                 
             }
             else if (absVelY == 0 && !standing) //Check if the player is not moving vertically and set the animation state accordingly
