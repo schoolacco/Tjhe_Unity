@@ -29849,7 +29849,7 @@ GameObject:
   - component: {fileID: 1959616433}
   m_Layer: 0
   m_Name: GameObject
-  m_TagString: Untagged
+  m_TagString: Checkpoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30090,6 +30090,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 233162555}
+  - {fileID: 1681951817}
   - {fileID: 196878984}
   - {fileID: 316893090}
   - {fileID: 14123017}
@@ -30097,7 +30098,6 @@ SceneRoots:
   - {fileID: 711922549}
   - {fileID: 217262928}
   - {fileID: 612223408}
-  - {fileID: 1681951817}
   - {fileID: 941871912}
   - {fileID: 904116399}
   - {fileID: 949951557}
@@ -30113,11 +30113,11 @@ SceneRoots:
   - {fileID: 1705417149}
   - {fileID: 2094744765}
   - {fileID: 241098836}
+  - {fileID: 400095201}
   - {fileID: 1905623119}
   - {fileID: 857034301}
   - {fileID: 21858585}
   - {fileID: 2028276170}
-  - {fileID: 400095201}
   - {fileID: 172780966}
   - {fileID: 2002896385}
   - {fileID: 1093000958}
