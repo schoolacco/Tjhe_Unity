@@ -18,7 +18,7 @@ public class Player : MonoBehaviour
     private SpriteRenderer renderer2D; //Creates a variable to render the sprite
     private PlayerController controller; //Creates a variable for the controller (created in a separate script)
     private Animator animator; //Creates a variable to work with the Player animations
-    public CapsuleCollider2D alive; //Creates a variable to check if the player is alive
+    public BoxCollider2D alive; //Creates a variable to check if the player is alive
     private bool isJumping = false;
     private bool canJump = false;
 
@@ -49,7 +49,7 @@ public class Player : MonoBehaviour
         float playerYPosition = transform.position.y;
         if (playerYPosition < -100)  //Check if the player has fallen below a certain position on the screen and return to the Splash Screen if true
         {
-             player.transform.position = _respawnPoint;;
+             body2D.transform.position = GetActiveCheckPointPosition();;
         }
     
         if (absVelY <= standingThreshold) //Check if the player is standing on the ground or not
