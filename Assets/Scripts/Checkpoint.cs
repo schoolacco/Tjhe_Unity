@@ -2,7 +2,7 @@
 using System.Linq;
 using UnityEngine;
 
-public class CheckPoint : MonoBehaviour 
+public class CheckPoint : MonoBehaviour
 {
     #region Public Variables
 

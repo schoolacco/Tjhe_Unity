@@ -17,6 +17,8 @@ public class Player : MonoBehaviour
     private Rigidbody2D body2D; //Creates a variable for the RigidBody2D component
     private SpriteRenderer renderer2D; //Creates a variable to render the sprite
     private PlayerController controller; //Creates a variable for the controller (created in a separate script)
+    public CheckPoint checkpoint; //Checkpoint referral stuff
+    public CheckPoint checkpoint = gameObject.GetComponent<Checkpoint>;
     private Animator animator; //Creates a variable to work with the Player animations
     public BoxCollider2D alive; //Creates a variable to check if the player is alive
     private bool isJumping = false;
@@ -49,7 +51,7 @@ public class Player : MonoBehaviour
         float playerYPosition = transform.position.y;
         if (playerYPosition < -100)  //Check if the player has fallen below a certain position on the screen and return to the Splash Screen if true
         {
-             body2D.transform.position = GetActiveCheckPointPosition();;
+             body2D.transform.position = checkpoint.GetActiveCheckPointPosition();z
         }
     
         if (absVelY <= standingThreshold) //Check if the player is standing on the ground or not
