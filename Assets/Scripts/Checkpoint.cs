@@ -13,9 +13,9 @@ public class CheckPoint : MonoBehaviour
 
     #endregion
 
-    #region Private Variables
+    
 
-    private Animator thisAnimator;
+    
 
     #endregion
 
@@ -80,7 +80,6 @@ public class CheckPoint : MonoBehaviour
 
     void Start()
     {
-        thisAnimator = GetComponent<Animator>();
 
         // We search all the checkpoints in the current scene
         CheckPointsList = GameObject.FindGameObjectsWithTag("CheckPoint").ToList();
