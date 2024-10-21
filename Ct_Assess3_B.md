@@ -47,7 +47,7 @@
 |Simple controls|Repetitive gameplay loop|Large amount of room for originality|
 |Direct Tutorial|Unoriginal|RPGs tend to be hard to execute well but if done correctly can work well|
 
-## **_____ Fangame**
+## **Undertale Fangame**
 |P|M|I|
 |-|-|-|
 |Challenging|Requires prior skill to play|Based on a prior fanbase|
@@ -67,7 +67,7 @@ To provide an entertaining challenge for veteran players of the original game (a
 ---
 ## **Problem Statement**
 ---
-Nearly all games are made for the purpose of entertainment, hence each game is made to cater to a specific audience of people who enjoy a specific aspect, my game is intended for prior players of _____ using similar mechanics and some unique ones to create a unique challenge for the player, although there are already many _____ fangames, there is no harm in having another (as long as it's well developed)
+Nearly all games are made for the purpose of entertainment, hence each game is made to cater to a specific audience of people who enjoy a specific aspect, my game is intended for prior players of Undertale using similar mechanics and some unique ones to create a unique challenge for the player, although there are already many Undertale fangames, there is no harm in having another (as long as it's well developed)
 
 ---
 ## **Skill Development**
@@ -92,10 +92,10 @@ Be able to recieve keyboard inputs for menu navigation, general movement and inp
 ---
 The program is able to update variables based on previously mentioned inputs and collision with 'bullets' as well as in-game events.
 
-* After the user input for movement the game will move the player across the menu or in the battle in the correspondingly related direction to the input
-* After the user inputs a non-movement menu input it will update the menu depending on which option was selected
+* After the user input for movement the game will move the player across the menu or in the battle in the correspondingly related direction to the input, it will check to see if the movement is possible, if not nothing will happen
+* After the user inputs a non-movement menu input it will update the menu depending on which option was selected, it will process which input it was
 * After the user clicks in the correct place the program will update a related variable for the easter egg or immediately show it
-* If the player has a skill issue and they get hit by a 'bullet' they will lose a set amount of health and recieve KARMA damage.
+* If the player has a skill issue and they get hit by a 'bullet' they will lose a set amount of health and recieve KARMA damage, the program will process the damage and if it is the end of the turn, the amount of KARMA
 * If the user's health is 0 a small death animation will be played before being taken to the game over screen
 * If the player wins a cutscene will be triggered (this may lead to further phases)
 ---
@@ -131,4 +131,45 @@ Achievements and in-game progress (via checkpoints) is saved locally
 ## **User Interactions**
 ---
 
-The user will able to use keyboard inputs (and some mouse clicks) to input (refer to the entire **Inputs** section)
+The user will able to use keyboard inputs (and some mouse clicks) to input (refer to the entire **Inputs** section), to summarise the player will be able to move around, in the menu, overworld and battle, the player will be able to interact with the regular menu and battle menu and the player may be able to click in specific places to trigger... some secrets (exact details in the **Inputs** sections)
+
+---
+## **Core Gameplay or Simulation Mechanics**
+---
+
+* Movement (Overworld/Battle)
+  - The user presses one of the arrow keys/WASD
+  - The player character moves in the corresponding direction
+     - Diagonal movement is possible in battle
+* Movement (Menu/Battle Menu)
+  - The user uses the arrow keys/WASD to switch between options in the menu
+     - In battle the user may need to dodge in the menu 
+  - The Z key is used to select an option and the X key is used to go back to the previous menu
+* Combat
+  - When the user triggers the fight they will be given a menu with 4 options: FIGHT, ACT, ITEM and MERCY (the last of which will be cracked)
+  - Selecting FIGHT will give the player a small minigame where they must land a moving line as close to the center as possible to deal as much damage as possible
+  - Selecting ACT will give the player further options for interaction, they may or may not have an effect
+  - Selecting ITEM will give the player their inventory, they will be able to interact with items in it to heal
+  - Selecting **~~MERCY will allow the player to spare the enemy given that the enemy also wants to spare the player~~**
+  - Whatever option is chosen the player will have to dodge an attack via dodging a 'bullet pattern' (bullet hell type stuff) via movement
+  - The user will be able to skip dialogue, Z proceeds to the next part of the dialogue, X immediately displays the segment of dialogue and C immediately displays and then skips the segment of dialogue and is the only one able to be held down
+---
+## **Scoring and Feedback**
+---
+* Achievements
+  - The user reaches certain milestones or find secrets they will be awarded achievements (this is basically the only scoring type thing)
+---
+## **Level Progression or Simulation Stages** 
+---
+* Phases
+  - The user actually manages to defeat the enemy, some cool cutscene happens which moves the player to the next phase, they recieve a checkpoint every phase
+---
+## **Saving and Loading Data**
+---
+* Progress
+  - Progress (achievements and checkpoints) will be saved locally and accessed and loaded when the game is opened
+---
+---
+# **Non-Functional Requirements**
+---
+---
