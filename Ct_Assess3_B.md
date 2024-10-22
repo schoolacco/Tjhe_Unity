@@ -115,7 +115,6 @@ The program shows the user the corresponding movement/menu change/gameover/easte
 ---
 **NIL**
 
-* **NULL**
 ---
 ## **Storage**
 ---
@@ -173,3 +172,83 @@ The user will able to use keyboard inputs (and some mouse clicks) to input (refe
 # **Non-Functional Requirements**
 ---
 ---
+## **Performance Requirements**
+---
+* The game should be able to load quickly (there isn't even that much to load) within at most 5 seconds
+* Inputs should have nigh-immediate responses
+* There should be **NO** noticable lag
+---
+## **Usability Requirements**
+---
+* Although the game is made for people who know how to play already there will be a tutorial option explaining all the mechanics of the game.
+* The Menu UI should be simple enough for new players to be able to navigate with ease
+---
+## **Compatibility Requirements**
+---
+* The game must be entirely compatible with PC
+---
+## **Scalability Requirements**
+---
+* The game should be able to handle extensions to the overworld and more battles without any noticible decrease in performance
+---
+## **Security Requirements**
+---
+* **Nil**
+---
+## **Reliability and Availability**
+---
+* The system should almost always be available
+* There will be some kind of autosave system incase the game randomly crashes
+---
+---
+# **Consideration of Social and Ethical Issues**
+---
+---
+## **Definitions**
+---
+### **Equity**
+Equity is being fair, giving aid to those that need it rather then evenly distributing resources, equity aims to give everyone an even playing field.
+### **Accessibility**
+If something is accessible then it is easily usable even for those that are disadvantaged, accessibility is the noun form of accessible, it being the quality of being accessible.
+
+---
+## **Accessibility**
+---
+Only small differences are nessecary for a project like this since most things use both visual and audio indicators and the main colour scheme is black and white, however one change that would be useful is an option to bind certain keys to certain inputs to increase the accessibility of the project, some people may have broken keys on a keyboard which can be irritating when you are attempting to play a game that requires such an input so allowing the user to 'remap' inputs, binding them to certain keys will allow for more players to play the game.
+
+---
+## **Privacy and Data Protection**
+---
+The project does not collect user data. (What else am I suppossed to say?)
+
+---
+## **Fairness and Representation**
+---
+The player character is of no clear race and is intentionally gender ambigious (just like the original) hence there is no ability for any kind of misrepresentation when the only human character is generally ambigious.
+
+---
+## **Mental and Emotional Wellbeing**
+---
+For this project it is hard to know, the original Undertale was based around the ability to spare or kill, punishing the player for choosing the latter, the game is set in a world where the player chose the latter, however mercy is still an option even if hard to achieve at the point the game is set, if the player chooses violence then it was their choice, whether it be for curiosity or simply because they wanted a **real** challenge...
+
+---
+## **Cultural Sensitivities**
+---
+We have funny skeleton man... I wouldn't be surprised if there were some cultures where a skeleton could be considered offensive... but that's about it... there's no plan for religious/cultural imagery to be included **anywhere** in the game.
+
+---
+---
+---
+# **Researching and Planning**
+---
+---
+---
+# **Exploration of Existing Ideas**
+---
+---
+(Considering that this is a fangame this will be compared to the original game... and 2 other fangames)
+|E|P|M|I|
+|-|-|-|-|
+|**Undertale**|The game has an amazing story with relatively simplistic visuals that simply just work well with the game, the game gives the player choices which decide the story's trajectory, you can spare everyone and befriend all the major characters to get the game's best ending, spare some and kill some to get a regular ending or... go down a dark path and meet the consequences of your actions, the game is also known for its hidden story, the secrets which players discover just by messing around, Undertale is known to be an amazing game which is why it has such a large fandom (many of which may have never even played the game lol) and it the reason I'm making my project what it is.|It's hard to say what exactly is bad about Undertale other then the usual bugs and glitches, the only major thing you may consider negative is just how dark the game can become when you choose to be a terrible person...|This project is a fangame, it takes the positive aspects of Undertale but will likely take the minuses as well... it will be difficult to create something even remotely similar to the original.|
+|**Undertale Yellow**|This fangame was made as an unofficial prelude to Undertale (although the creator of Undertale made it canon to the story), I've only played through the first area of the game but from my experience it does live up to the original in quality even adding new features which many have wanted, the fangame allows for the user to take similar paths as Undertale although the punishment for choosing the... bad path is even higher then in Undertale.|The game does take on an overall darker undertone then Undertale in both the neutral and the... **other** route... the player character's goal is to bring retribution for the previous humans... although in the... **other path** this is taken to an extreme extent to the point that the player is obviously placed in the wrong, the neutral route ending can be considered rather distrubing in it's final fight although it does create the required atmosphere.|Overall this fangame was a good remake of Undertale's concepts staying true to the original and improving upon it, however I feel as if the game is sometimes slightly too dark... **but that's what the they deserve for what they've chosen to do...**|
+|**Outertale**|This is the only Undertale fangame I entirely completed and it was an overall fun experience introducing some interesting twists to differienate from the original game.|-|-|
