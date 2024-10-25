@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="anthony.revel510"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-25 02:39:57 PM"/>
+        <attribute name="created" value="YW50aG9ueS5yZXZlbDUxMDsgRDQ2MTM3MDE5NUZGUDsgMjAyNC0xMC0yNTsgMDI6MjQ6MzkgUE07IDM2Mzk="/>
+        <attribute name="edited" value="YW50aG9ueS5yZXZlbDUxMDsgRDQ2MTM3MDE5NUZGUDsgMjAyNC0xMC0yNTsgMDI6Mzk6NTcgUE07IDM2NDU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <call expression="MENUMOVEMENT"/>
+        </body>
+    </function>
+    <function name="MENUMOVEMENT" type="None" variable="">
+        <parameters/>
+        <body>
+            <while expression="True">
+                <declare name="userkeyboardInput" type="String" array="False" size="" variables="userkeyboardInput"/>
+                <input variable="userkeyboardInput"/>
+                <if expression="&quot;A pressed?&quot;">
+                    <then>
+                        <if expression="&quot;Left option?&quot;">
+                            <then>
+                                <output expression="&quot;Move Left&quot;"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;No&quot;"/>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <if expression="&quot;D pressed?&quot;">
+                            <then>
+                                <if expression="&quot;Right option?&quot;">
+                                    <then>
+                                        <output expression="&quot;Move Right&quot;"/>
+                                    </then>
+                                    <else>
+                                        <output expression="&quot;No&quot;"/>
+                                    </else>
+                                </if>
+                            </then>
+                            <else>
+                                <if expression="&quot;W pressed?&quot;">
+                                    <then>
+                                        <if expression="&quot;Up option?&quot;">
+                                            <then>
+                                                <output expression="&quot;Move Up&quot;"/>
+                                            </then>
+                                            <else>
+                                                <output expression="&quot;No&quot;"/>
+                                            </else>
+                                        </if>
+                                    </then>
+                                    <else>
+                                        <if expression="&quot;S pressed?&quot;">
+                                            <then>
+                                                <if expression="&quot;Down option?&quot;">
+                                                    <then>
+                                                        <output expression="&quot;Move Down&quot;"/>
+                                                    </then>
+                                                    <else>
+                                                        <output expression="&quot;No&quot;"/>
+                                                    </else>
+                                                </if>
+                                            </then>
+                                            <else>
+                                                <if expression="&quot;Z pressed?&quot;">
+                                                    <then>
+                                                        <if expression="&quot;Menu change possible?&quot;">
+                                                            <then>
+                                                                <output expression="&quot;Change Menu&quot;"/>
+                                                            </then>
+                                                            <else>
+                                                                <output expression="No"/>
+                                                            </else>
+                                                        </if>
+                                                    </then>
+                                                    <else>
+                                                        <if expression="&quot;X pressed?&quot;">
+                                                            <then>
+                                                                <if expression="&quot;Reverse menu change possible?&quot;">
+                                                                    <then>
+                                                                        <output expression="&quot;Change Menu&quot;"/>
+                                                                    </then>
+                                                                    <else>
+                                                                        <output expression="No"/>
+                                                                    </else>
+                                                                </if>
+                                                            </then>
+                                                            <else/>
+                                                        </if>
+                                                    </else>
+                                                </if>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <if expression="&quot;Menu exited?&quot;">
+                    <then>
+                        <breakpoint/>
+                    </then>
+                    <else/>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
