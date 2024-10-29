@@ -8,6 +8,7 @@ TagManager:
   - Deadly
   - Music
   - Checkpoint
+  - CheckPoint
   layers:
   - Default
   - TransparentFX

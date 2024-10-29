@@ -348,7 +348,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 68351418981504230, guid: fecc3bc7dd2e11d409aac1004f6128e4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1959616434}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fecc3bc7dd2e11d409aac1004f6128e4, type: 3}
 --- !u!1001 &217262928
@@ -837,6 +840,11 @@ PrefabInstance:
 --- !u!1 &662998254 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7124640417182926093, guid: fecc3bc7dd2e11d409aac1004f6128e4, type: 3}
+  m_PrefabInstance: {fileID: 196878984}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &662998262 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 68351418981504230, guid: fecc3bc7dd2e11d409aac1004f6128e4, type: 3}
   m_PrefabInstance: {fileID: 196878984}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &711922549
@@ -29847,9 +29855,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1959616434}
   - component: {fileID: 1959616433}
+  - component: {fileID: 1959616435}
   m_Layer: 0
   m_Name: GameObject
-  m_TagString: Checkpoint
+  m_TagString: CheckPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29907,13 +29916,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1959616432}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 39.7, y: -8, z: 2.807323}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.5999985, y: -9.5, z: 2.807323}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 662998262}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1959616435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1959616432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c99478847dc9c042b1746ba5f1ed96a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Activated: 0
 --- !u!1001 &2002896385
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30122,4 +30144,3 @@ SceneRoots:
   - {fileID: 2002896385}
   - {fileID: 1093000958}
   - {fileID: 1914561164}
-  - {fileID: 1959616434}
