@@ -30,17 +30,22 @@ public class CheckPoint : MonoBehaviour
     /// <returns></returns>
     public static Vector3 GetActiveCheckPointPosition()
     {
-        Vector3 result = Vector3.zero;
-            foreach (GameObject cp in CheckPointsList)
+        Vector3 result = Vector3.zero; // Default position
+        foreach (GameObject cp in CheckPointsList)
+        {
+            if (cp != null) // Check if the checkpoint is not null
             {
-                if (cp.GetComponent<CheckPoint>().Activated)
+                CheckPoint checkpointComponent = cp.GetComponent<CheckPoint>();
+                if (checkpointComponent != null && checkpointComponent.Activated)
                 {
                     result = cp.transform.position;
                     break;
                 }
             }
+        }
         return result;
     }
+
     public void ResetCheckpoint()
     {
          Activated = false; // Reseting stuff
