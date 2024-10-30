@@ -4,9 +4,9 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="anthony.revel510"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2024-10-30 10:58:20 AM"/>
+        <attribute name="saved" value="2024-10-25 02:39:57 PM"/>
         <attribute name="created" value="YW50aG9ueS5yZXZlbDUxMDsgRDQ2MTM3MDE5NUZGUDsgMjAyNC0xMC0yNTsgMDI6MjQ6MzkgUE07IDM2Mzk="/>
-        <attribute name="edited" value="YW50aG9ueS5yZXZlbDUxMDsgRDQ2MTM3MDE5NUZGUDsgMjAyNC0xMC0zMDsgMTA6NTg6MjAgQU07IDM2MTY="/>
+        <attribute name="edited" value="YW50aG9ueS5yZXZlbDUxMDsgRDQ2MTM3MDE5NUZGUDsgMjAyNC0xMC0yNTsgMDI6Mzk6NTcgUE07IDM2NDU="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -14,16 +14,10 @@
             <call expression="MENUMOVEMENT"/>
         </body>
     </function>
-    <function name="MOVEMENT" type="None" variable="">
+    <function name="MENUMOVEMENT" type="None" variable="">
         <parameters/>
         <body>
             <while expression="True">
-                <if expression="&quot;Player touching 'bullet'?&quot;">
-                    <then>
-                        <output expression="&quot;Player loses 10 health and recieves 1 KARMA/frame&quot;"/>
-                    </then>
-                    <else/>
-                </if>
                 <declare name="userkeyboardInput" type="String" array="False" size="" variables="userkeyboardInput"/>
                 <input variable="userkeyboardInput"/>
                 <if expression="&quot;A pressed?&quot;">
@@ -73,7 +67,35 @@
                                                     </else>
                                                 </if>
                                             </then>
-                                            <else/>
+                                            <else>
+                                                <if expression="&quot;Z pressed?&quot;">
+                                                    <then>
+                                                        <if expression="&quot;Menu change possible?&quot;">
+                                                            <then>
+                                                                <output expression="&quot;Change Menu&quot;"/>
+                                                            </then>
+                                                            <else>
+                                                                <output expression="No"/>
+                                                            </else>
+                                                        </if>
+                                                    </then>
+                                                    <else>
+                                                        <if expression="&quot;X pressed?&quot;">
+                                                            <then>
+                                                                <if expression="&quot;Reverse menu change possible?&quot;">
+                                                                    <then>
+                                                                        <output expression="&quot;Change Menu&quot;"/>
+                                                                    </then>
+                                                                    <else>
+                                                                        <output expression="No"/>
+                                                                    </else>
+                                                                </if>
+                                                            </then>
+                                                            <else/>
+                                                        </if>
+                                                    </else>
+                                                </if>
+                                            </else>
                                         </if>
                                     </else>
                                 </if>
@@ -81,9 +103,9 @@
                         </if>
                     </else>
                 </if>
-                <if expression="&quot;Turn ended?&quot;">
+                <if expression="&quot;Menu exited?&quot;">
                     <then>
-                        <output expression="&quot;Trigger Battle Menu&quot;"/>
+                        <breakpoint/>
                     </then>
                     <else/>
                 </if>
