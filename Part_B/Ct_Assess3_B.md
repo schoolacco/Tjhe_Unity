@@ -260,12 +260,17 @@ We have funny skeleton man... I wouldn't be surprised if there were some culture
 ---
 ## **Flowcharts**
 ---
+### **Movement - Menu**
 ![Movement(Menu) Flowchart](Flowcharts/Movement%20-%20MENUMOVEMENT.png)
-
+### **Movement - Menu - Battle**
+![Movement(Menu - Battle) Flowchart](Flowcharts/Menu%20-%20Battle%20-%20MENUMOVEMENT.png)
+### **Movement**
+![Movement Flowchart](Flowcharts/Movement%20-%20MOVEMENT.png)
 ---
 ## **Pseudocode**
 ---
-<pre>
+### **Movement - Menu**
+~~~
 BEGIN Movement(Menu)
   WHILE On menu
     INPUT userkeyboardInput
@@ -297,4 +302,119 @@ BEGIN Movement(Menu)
     ENDIF
   ENDWHILE
 END Movement(Menu)
-<pre>
+~~~
+### **Movement - Menu - Battle**
+~~~
+BEGIN Movement(Menu - Battle)
+  WHILE On menu
+    INPUT userkeyboardInput
+    IF 'Player' touching 'bullet'
+      Player loses 10 health and recieves 1 KARMA every frame
+    ENDIF
+    IF 'A' pressed THEN
+      IF 'Left' valid movement THEN
+        Move menu option left
+      ENDIF
+    ELSE IF 'D' pressed THEN
+      IF 'Right' valid movement THEN
+        Move menu option right
+      ENDIF
+    ELSE IF 'W' pressed THEN
+      IF 'Up' valid movement THEN
+        Move menu option up
+      ENDIF
+    ELSE IF 'S' pressed THEN
+      IF 'Down' valid movement THEN
+        Move menu option down
+      ENDIF
+    ELSE IF 'Z' pressed THEN
+        IF Button is 'FIGHT' THEN
+          Fight menu
+          IF 'Z' presed THEN
+            IF distance from center is less then 1 THEN
+              crit bonus is crit bonus damage
+            ELSE
+              crit bonus is 0
+            ENDIF
+            damage dealt is attack/distance from center + crit bonus
+            Enemy loses health equalivent to damage dealt
+          ELSE IF 'X' pressed THEN
+            IF 'Previous menu' real THEN
+              Previous menu
+            ENDIF
+          ENDIF
+        ELSE IF Button is 'ITEM' THEN
+          Switch to ITEM menu
+          IF 'Z' pressed THEN
+            Find amount healed by healing item
+            Find amount of health missing
+            IF amount of health missing is greater then amount healed by healing item THEN
+              increase playerhealth by amount healed by healing item
+            ELSE
+              playerhealth is maxhealth
+            ENDIF
+          ELSE IF 'X' pressed THEN
+            IF 'Previous menu' real THEN
+              Previous menu
+            ENDIF
+          ENDIF          
+        ELSE IF Button is 'ACT' THEN
+          Switch to ACT menu
+          IF 'Z' pressed THEN
+           trigger dialogue
+          ELSE IF 'X' pressed THEN
+            IF 'Previous menu' real THEN
+              Previous menu
+            ENDIF
+          ENDIF
+        IF 'No next menu' THEN
+          break
+        ENDIF
+        ELSE IF Button is 'MERCY' THEN
+          Switch to MERCY menu
+          IF 'Z' pressed THEN
+           trigger dialogue
+          ELSE IF 'X' pressed THEN
+            IF 'Previous menu' real THEN
+              Previous menu
+            ENDIF
+          ENDIF
+        IF 'No next menu' THEN
+          break
+        ENDIF
+    ELSE IF 'X' pressed THEN
+      IF 'Previous menu' real THEN
+        Previous menu
+      ENDIF
+    ENDIF
+  ENDWHILE
+END Movement(Menu - Battle)
+~~~
+### **Movement**
+~~~
+BEGIN Movement
+  WHILE Movement possible
+    INPUT userkeyboardInput
+    IF 'Player' touching 'bullet'
+      Player loses 10 health and recieves 1 KARMA every frame
+    ENDIF
+    IF 'A' pressed THEN
+      IF 'Left' valid movement THEN
+        Move left
+      ENDIF
+    ELSE IF 'D' pressed THEN
+      IF 'Right' valid movement THEN
+        Move right
+      ENDIF
+    ELSE IF 'W' pressed THEN
+      IF 'Up' valid movement THEN
+        Move up
+      ENDIF
+    ELSE IF 'S' pressed THEN
+      IF 'Down' valid movement THEN
+        Move down
+      ENDIF
+    ENDIF
+  ENDWHILE
+END Movement
+~~~
