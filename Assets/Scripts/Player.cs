@@ -35,7 +35,6 @@ public class Player : MonoBehaviour
         controller = GetComponent<PlayerController>();
         animator = GetComponent<Animator>();
         audioData = GetComponent<AudioSource>();
-
         
     }
 
@@ -45,14 +44,22 @@ public class Player : MonoBehaviour
         var absVelX = Mathf.Abs(body2D.velocity.x); //Creates a variable to store horizontal movement velocity (x)
         var absVelY = Mathf.Abs(body2D.velocity.y); //Creates a variable to store vertical movement velocity (y)
         var forceY = 0f; //Creates a variable to store force
-
+        Vector3 checkpointPosition = CheckPoint.GetActiveCheckPointPosition();
           
         // Access the player's Y-axis position
         float playerYPosition = transform.position.y;
         if (playerYPosition < -100)  //Check if the player has fallen below a certain position on the screen and return to the Splash Screen if true
-        {
-          body2D.transform.position = CheckPoint.GetActiveCheckPointPosition();
-        }
+          if (checkpointPosition != Vector3.zero)
+            {
+                body2D.transform.position = checkpointPosition;
+                body2D.velocity = Vector2.zero;
+                alive = GetComponent<BoxCollider2D>();
+                alive.enabled = true;
+            }
+            else
+            {
+              SceneManager.LoadScene("GameOver");
+            }
     
         if (absVelY <= standingThreshold) //Check if the player is standing on the ground or not
         {

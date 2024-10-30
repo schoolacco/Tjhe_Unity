@@ -19,7 +19,7 @@ public class CheckPoint : MonoBehaviour
     /// List with all checkpoints objects in the scene
     /// </summary>
     public static List<GameObject> CheckPointsList;
-
+    public BoxCollider2D Collider;
     #endregion
 
     #region Static Functions
@@ -30,10 +30,7 @@ public class CheckPoint : MonoBehaviour
     /// <returns></returns>
     public static Vector3 GetActiveCheckPointPosition()
     {
-        Vector3 result = new Vector3(0, 0, 0);
-
-        if (CheckPointsList != null)
-        {
+        Vector3 result = Vector3.zero;
             foreach (GameObject cp in CheckPointsList)
             {
                 if (cp.GetComponent<CheckPoint>().Activated)
@@ -42,8 +39,6 @@ public class CheckPoint : MonoBehaviour
                     break;
                 }
             }
-        }
-
         return result;
     }
 
@@ -63,18 +58,20 @@ public class CheckPoint : MonoBehaviour
         }
 
         Activated = true;
+        Debug.Log("Checkpoint activated at position: " + transform.position);
     }
 
     #endregion
 
     void Start()
     {
-        CheckPointsList = GameObject.FindGameObjectsWithTag("CheckPoint").ToList();
+        if (CheckPointsList == null)
+          CheckPointsList = GameObject.FindGameObjectsWithTag("CheckPoint").ToList();
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Player")
+        if (other.CompareTag("Player"))
         {
             ActivateCheckPoint();
         }
