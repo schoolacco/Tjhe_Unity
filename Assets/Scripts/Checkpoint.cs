@@ -41,7 +41,10 @@ public class CheckPoint : MonoBehaviour
             }
         return result;
     }
-
+    public void ResetCheckpoint()
+    {
+         Activated = false; // Reseting stuff
+    }
     #endregion
 
 
@@ -62,7 +65,14 @@ public class CheckPoint : MonoBehaviour
     }
 
     #endregion
-
+    void Awake()
+    {
+      CheckPointsList = GameObject.FindGameObjectsWithTag("CheckPoint").ToList();
+      foreach (GameObject cp in CheckPointsList)
+        {
+          cp.ResetCheckpoint();
+        }
+    }
     void Start()
     {
         if (CheckPointsList == null)
