@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="anthony.revel510"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-31 01:21:22 PM"/>
+        <attribute name="created" value="YW50aG9ueS5yZXZlbDUxMDsgRDQ2MTM3MDE5NUZGUDsgMjAyNC0xMC0zMTsgMDE6MTM6MDQgUE07IDM2MjU="/>
+        <attribute name="edited" value="YW50aG9ueS5yZXZlbDUxMDsgRDQ2MTM3MDE5NUZGUDsgMjAyNC0xMC0zMTsgMDE6MjE6MjIgUE07IDM2MjQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body/>
+    </function>
+    <function name="ACHIEVEMENT" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Achievementlist" type="String" array="True" size="999" variables="Achievementlist[999]"/>
+            <declare name="Howtoachievement" type="String" array="False" size="" variables="Howtoachievement"/>
+            <input variable="Playerachievement"/>
+            <if expression="Playerachievement = &quot;TRUE&quot;">
+                <then>
+                    <for variable="Achievementlist" start="0" end="length(Howtoachievement)" direction="inc" step="1">
+                        <output expression="Check"/>
+                        <if expression="&quot;Achievement matches method&quot;">
+                            <then>
+                                <breakpoint/>
+                            </then>
+                            <else/>
+                        </if>
+                    </for>
+                    <output expression="&quot;Achievement :D&quot;"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

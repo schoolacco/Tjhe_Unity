@@ -264,8 +264,14 @@ We have funny skeleton man... I wouldn't be surprised if there were some culture
 ![Movement(Menu) Flowchart](Flowcharts/Movement%20-%20MENUMOVEMENT.png)
 ### **Movement - Menu - Battle**
 ![Movement(Menu - Battle) Flowchart](Flowcharts/Menu%20-%20Battle%20-%20MENUMOVEMENT.png)
+---
 ### **Movement**
 ![Movement Flowchart](Flowcharts/Movement%20-%20MOVEMENT.png)
+### **Dialogue**
+![Dialogue Flowchart](Flowcharts/Dialogue%20-%20Dialogue.png)
+### **Dialogue**
+![Achievement Flowchart](Flowcharts/Achieve%20-%20ACHIEVEMENT.png)
+
 ---
 ## **Pseudocode**
 ---
@@ -417,4 +423,35 @@ BEGIN Movement
     ENDIF
   ENDWHILE
 END Movement
+~~~
+### **Dialogue**
+~~~
+BEGIN Dialogue
+  INPUT userkeyboardInput
+  If 'Z' pressed THEN
+    IF dialogue segment ended THEN
+      Begin next dialogue segment
+    ENDIF
+  ELSE IF 'X' pressed THEN
+    Display dialogue segment
+  ELSE IF 'C' pressed THEN
+    WHILE 'C' is pressed
+      Fully display and skip dialogue segment
+    ENDWHILE
+  ENDIF
+END Dialogue
+~~~
+### **Achievement**
+~~~
+BEGIN Achievement
+  INPUT playerachievement
+  IF playerachievement is TRUE THEN
+     FOR achievement in achievementlist
+       check if it is right achievement
+       IF achievement is correct THEN
+         BREAK
+       ENDIF
+      ENDFOR
+  ENDIF
+END Achievement
 ~~~

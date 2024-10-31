@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="anthony.revel510"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-31 12:54:21 PM"/>
+        <attribute name="created" value="YW50aG9ueS5yZXZlbDUxMDsgRDQ2MTM3MDE5NUZGUDsgMjAyNC0xMC0zMTsgMTI6NDk6MjMgUE07IDM2Mzc="/>
+        <attribute name="edited" value="YW50aG9ueS5yZXZlbDUxMDsgRDQ2MTM3MDE5NUZGUDsgMjAyNC0xMC0zMTsgMTI6NTQ6MjEgUE07IDM2MzE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body/>
+    </function>
+    <function name="Dialogue" type="None" variable="">
+        <parameters/>
+        <body>
+            <input variable="Userkeyboardinput"/>
+            <if expression="&quot;Z is pressed&quot;">
+                <then>
+                    <if expression="&quot;Dialogue is finished&quot;">
+                        <then>
+                            <output expression="&quot;Proceed to next dialogue segment&quot;"/>
+                        </then>
+                        <else/>
+                    </if>
+                </then>
+                <else>
+                    <if expression="&quot;X is pressed&quot;">
+                        <then>
+                            <output expression="&quot;Finish dialogue segment&quot;"/>
+                        </then>
+                        <else>
+                            <if expression="&quot;C is pressed&quot;">
+                                <then>
+                                    <while expression="&quot;C is pressed?&quot;">
+                                        <output expression="&quot;Finish and skip dialogue segment immediately&quot;"/>
+                                    </while>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
