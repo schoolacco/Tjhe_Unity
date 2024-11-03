@@ -11,6 +11,7 @@ public class CheckPoint : MonoBehaviour
     /// </summary>
     public bool Activated = false;
 
+
     #endregion
 
     #region Static Variables
@@ -62,18 +63,27 @@ public class CheckPoint : MonoBehaviour
     {
         foreach (GameObject cp in CheckPointsList)
         {
-            cp.GetComponent<CheckPoint>().Activated = false;
-        }
+            if (cp.GetComponent<CheckPoint>() != null) //Error prevention
+             { cp.GetComponent<CheckPoint>().Activated = false;
+             }
+        } 
 
-        Activated = true;
-        Debug.Log("Checkpoint activated at position: " + transform.position);
+        Activated = true; 
+        Debug.Log("Checkpoint activated at position: " + transform.position); // Debuging to see if the checkpoint functioned
     }
 
     #endregion
+    void Awake()
+    {
+      CheckPointsList = GameObject.FindGameObjectsWithTag("CheckPoint").ToList(); // Error testing - 1
+      Debug.Log("List made..?"); // Future me: THIS WORKED?
+    }    
     void Start()
     {
         if (CheckPointsList == null)
+        {
           CheckPointsList = GameObject.FindGameObjectsWithTag("CheckPoint").ToList();
+        }  
     }
 
     void OnTriggerEnter2D(Collider2D other)
