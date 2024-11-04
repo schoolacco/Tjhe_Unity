@@ -23,12 +23,6 @@
 |Simple controls|Generic|Has a large area for original ideas|
 |Easy to code|Less interactive|-|
 
-## **Unity - 2D Platformer**
-|P|M|I|
-|-|-|-|
-|Simple controls|Generic|Has a large area for original ideas|
-|Easy to code|Less interactive|-|
-
 ## **Unity - 3D Roll a Ball**
 |P|M|I|
 |-|-|-|
@@ -132,6 +126,10 @@ Achievements and in-game progress (via checkpoints) is saved locally
 
 The user will able to use keyboard inputs (and some mouse clicks) to input (refer to the entire **Inputs** section), to summarise the player will be able to move around, in the menu, overworld and battle, the player will be able to interact with the regular menu and battle menu and the player may be able to click in specific places to trigger... some secrets (exact details in the **Inputs** sections)
 
+i.e.
+* User inputs with directional arrows keys or WASD to move in the corresponding direction (in the menu, in the battle or in the overworld)
+* User inputs with Z, X and C keys to interact with the menu (Z to interact, X to exit the specific part of the menu, C to quickly skip dialogue)
+* User may be able to hover the cursor over specific areas of the screen and click to activate an easter egg
 ---
 ## **Core Gameplay or Simulation Mechanics**
 ---
@@ -247,11 +245,11 @@ We have funny skeleton man... I wouldn't be surprised if there were some culture
 ---
 ---
 (Considering that this is a fangame this will be compared to the original game... and 2 other fangames)
-|Example|P|M|I|
-|-|-|-|-|
-|**Undertale**|The game has an amazing story with relatively simplistic visuals that simply just work well with the game, the game gives the player choices which decide the story's trajectory, you can spare everyone and befriend all the major characters to get the game's best ending, spare some and kill some to get a regular ending or... go down a dark path and meet the consequences of your actions, the game is also known for its hidden story, the secrets which players discover just by messing around, Undertale is known to be an amazing game which is why it has such a large fandom (many of which may have never even played the game lol) and it the reason I'm making my project what it is.|It's hard to say what exactly is bad about Undertale other then the usual bugs and glitches, the only major thing you may consider negative is just how dark the game can become when you choose to be a terrible person...|This project is a fangame, it takes the positive aspects of Undertale but will likely take the minuses as well... it will be difficult to create something even remotely similar to the original.|
-|**Undertale Yellow**|This fangame was made as an unofficial prelude to Undertale (although the creator of Undertale made it canon to the story), I've only played through the first area of the game but from my experience it does live up to the original in quality even adding new features which many have wanted, the fangame allows for the user to take similar paths as Undertale although the punishment for choosing the... bad path is even higher then in Undertale.|The game does take on an overall darker undertone then Undertale in both the neutral and the... **other** route... the player character's goal is to bring retribution for the previous humans... although in the... **other path** this is taken to an extreme extent to the point that the player is obviously placed in the wrong, the neutral route ending can be considered rather distrubing in it's final fight although it does create the required atmosphere.|Overall this fangame was a good remake of Undertale's concepts staying true to the original and improving upon it, however I feel as if the game is sometimes slightly too dark... **but that's what the they deserve for what they've chosen to do...**|
-|**Outertale**|This is the only Undertale fangame I entirely completed and it was an overall fun experience introducing some interesting twists to differienate from the original game, it added many more routes for the game to take but also sometimes forced the hand of the player likely to limit the amount of variation, they did add an extra section for the community with several unique mechanics expanding on the story, it was an amazing fangame for the limited idea it was based upon (Undertale but space)|I feel as if some aspects of the game were made too boring even in the better endings, sometimes you'll have to keep walking for almost 10 minutes with no encounters creating a rather boring experience. Although the game does try to take a lighter tone then the original one ending is... incredibly dark...|The extra endings and lighter tone can be useful for my game.|
+|Example|Image|P|M|I|
+|-|-|-|-|-|
+|**Undertale**|![Undertale Logo](Images/Undertale-logo.jpg)|The game has an amazing story with relatively simplistic visuals that simply just work well with the game, the game gives the player choices which decide the story's trajectory, you can spare everyone and befriend all the major characters to get the game's best ending, spare some and kill some to get a regular ending or... go down a dark path and meet the consequences of your actions, the game is also known for its hidden story, the secrets which players discover just by messing around, Undertale is known to be an amazing game which is why it has such a large fandom (many of which may have never even played the game lol) and it the reason I'm making my project what it is.|It's hard to say what exactly is bad about Undertale other then the usual bugs and glitches, the only major thing you may consider negative is just how dark the game can become when you choose to be a terrible person...|This project is a fangame, it takes the positive aspects of Undertale but will likely take the minuses as well... it will be difficult to create something even remotely similar to the original.|
+|**Undertale Yellow**|![Undertale Yellow Logo](Images/images.png)|This fangame was made as an unofficial prelude to Undertale (although the creator of Undertale made it canon to the story), I've only played through the first area of the game but from my experience it does live up to the original in quality even adding new features which many have wanted, the fangame allows for the user to take similar paths as Undertale although the punishment for choosing the... bad path is even higher then in Undertale.|The game does take on an overall darker undertone then Undertale in both the neutral and the... **other** route... the player character's goal is to bring retribution for the previous humans... although in the... **other path** this is taken to an extreme extent to the point that the player is obviously placed in the wrong, the neutral route ending can be considered rather distrubing in it's final fight although it does create the required atmosphere.|Overall this fangame was a good remake of Undertale's concepts staying true to the original and improving upon it, however I feel as if the game is sometimes slightly too dark... **but that's what the they deserve for what they've chosen to do...**|
+|**Outertale**|![PS!Outertale Logo](Images/300px-PS!Outertale_splash_screen.webp)|This is the only Undertale fangame I entirely completed and it was an overall fun experience introducing some interesting twists to differienate from the original game, it added many more routes for the game to take but also sometimes forced the hand of the player likely to limit the amount of variation, they did add an extra section for the community with several unique mechanics expanding on the story, it was an amazing fangame for the limited idea it was based upon (Undertale but space)|I feel as if some aspects of the game were made too boring even in the better endings, sometimes you'll have to keep walking for almost 10 minutes with no encounters creating a rather boring experience. Although the game does try to take a lighter tone then the original one ending is... incredibly dark...|The extra endings and lighter tone can be useful for my game.|
 
 ---
 ---
@@ -492,5 +490,29 @@ END Load
 ---
 ![Gnatt Chart](Gnatt/Gnatt%20Chart_%20-%20Sheet1.png)
 
+---
+---
+
+## **Storyboards**
+---
+---
+### **Scene 1**
+![Scene 1]()
+### **Scene 2**
+![Scene 2]()
+### **Scene 3**
+![Scene 3]()
+### **Scene 4**
+![Scene 4]()
+
+---
+---
+
+**THEJ END**
+---
+
+(Go play my game if you haven't already)
+
+---
 ---
 ---
