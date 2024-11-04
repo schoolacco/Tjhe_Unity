@@ -264,13 +264,16 @@ We have funny skeleton man... I wouldn't be surprised if there were some culture
 ![Movement(Menu) Flowchart](Flowcharts/Movement%20-%20MENUMOVEMENT.png)
 ### **Movement - Menu - Battle**
 ![Movement(Menu - Battle) Flowchart](Flowcharts/Menu%20-%20Battle%20-%20MENUMOVEMENT.png)
----
 ### **Movement**
 ![Movement Flowchart](Flowcharts/Movement%20-%20MOVEMENT.png)
 ### **Dialogue**
 ![Dialogue Flowchart](Flowcharts/Dialogue%20-%20Dialogue.png)
-### **Dialogue**
+### **Achievement**
 ![Achievement Flowchart](Flowcharts/Achieve%20-%20ACHIEVEMENT.png)
+### **Transition**
+![Transition Flowchart](Flowcharts/Transition%20-%20Transition.png)
+### **Loading autosaved data**
+![Loading Flowchart](Flowcharts/Save_Load%20-%20SAVE_LOAD.png)
 
 ---
 ## **Pseudocode**
@@ -455,3 +458,39 @@ BEGIN Achievement
   ENDIF
 END Achievement
 ~~~
+### **Transition**
+~~~
+BEGIN Transition
+  IF battleended is TRUE THEN
+    trigger cutscene
+    Phasenum increases by 0.5
+    CALL Battle
+  ELSE
+    CALL Battle
+  ENDIF
+END Transition
+~~~
+### **Loading**
+~~~
+BEGIN Load
+  FOR every achievement in achievementlist THEN
+    IF achievement is achieved THEN
+      Award achievement
+    ENDIF
+  ENDFOR
+  FOR every checkpoint in checkpointlist THEN
+    IF checkpoint has been reached THEN
+      Allow access to checkpoint
+    ENDIF
+  ENDFOR
+END Load
+~~~
+---
+---
+## **Gnatt Chart**
+---
+---
+![Gnatt Chart](Gnatt/Gnatt%20Chart_%20-%20Sheet1.png)
+
+---
+---

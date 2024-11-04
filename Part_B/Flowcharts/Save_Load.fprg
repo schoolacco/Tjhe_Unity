@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="anthony.revel510"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-11-04 10:28:35 AM"/>
+        <attribute name="created" value="YW50aG9ueS5yZXZlbDUxMDsgRDQ2MTM3MDE5NUZGUDsgMjAyNC0xMS0wNDsgMTA6MjM6MjQgQU07IDM2MTQ="/>
+        <attribute name="edited" value="YW50aG9ueS5yZXZlbDUxMDsgRDQ2MTM3MDE5NUZGUDsgMjAyNC0xMS0wNDsgMTA6Mjg6MzUgQU07IDM2MjE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body/>
+    </function>
+    <function name="SAVE" type="None" variable="">
+        <parameters/>
+        <body>
+            <for variable="smth" start="Achievement" end="len(Achievementlist)" direction="inc" step="1">
+                <if expression="&quot;Has achievement been earned&quot;">
+                    <then>
+                        <output expression="&quot;Give player achievement&quot;"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;Don't give player achievement&quot;"/>
+                    </else>
+                </if>
+            </for>
+            <for variable="smth" start="Checkpoint" end="len(Checkpointlist)" direction="inc" step="1">
+                <if expression="&quot;Has checkpoint been reached?&quot;">
+                    <then>
+                        <output expression="&quot;Give player access to checkpoint&quot;"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;Don't give player access to checkpoint&quot;"/>
+                    </else>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
