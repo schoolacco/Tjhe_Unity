@@ -421,7 +421,7 @@ GameObject:
   - component: {fileID: 672362085}
   - component: {fileID: 672362084}
   m_Layer: 0
-  m_Name: Audio Source
+  m_Name: AudioSource
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

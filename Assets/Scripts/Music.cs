@@ -1,22 +1,36 @@
 using UnityEngine;
-
 public class MusicClass : MonoBehaviour
 {
+    private static MusicClass instance; // Singleton instance
     private AudioSource _audioSource;
+
     private void Awake()
     {
-        DontDestroyOnLoad(transform.gameObject);
-        _audioSource = GetComponent<AudioSource>();
+        if (instance == null)  // Check if instance already exists
+        {
+            instance = this;  // Set the instance to this object
+            DontDestroyOnLoad(gameObject);  // Persist across scenes
+            _audioSource = GetComponent<AudioSource>();
+        }
+        else
+        {
+            Destroy(gameObject);  // Destroy duplicate instance
+        }
     }
 
     public void PlayMusic()
     {
-        if (_audioSource.isPlaying) return;
-        _audioSource.Play();
+        if (_audioSource && !_audioSource.isPlaying)
+        {
+            _audioSource.Play();
+        }
     }
 
     public void StopMusic()
     {
-        _audioSource.Stop();
+        if (_audioSource)
+        {
+            _audioSource.Stop();
+        }
     }
 }
