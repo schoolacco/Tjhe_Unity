@@ -9,15 +9,19 @@ public class SecretTeleport : MonoBehaviour
 
     private void Start()
     {
-        musiccontroller = FindObjectOfType<MusicClass>();
+        musiccontroller = FindObjectOfType<MusicClass>(); // possibly obselete
         Collider2D = GetComponent<BoxCollider2D>();
+        if (musiccontroller == null)
+        {
+            Debug.LogWarning("Where is it");
+        }
     }
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
             Debug.Log("Interacted");            
-            musiccontroller.StopMusic();
+            MusicClass.Instance.StopMusic();
             SceneManager.LoadScene("Level_O1");
         }
     }
