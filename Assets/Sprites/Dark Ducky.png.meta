@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8fed8380a4a0f434e86d2d3779a0f7e5
+guid: adfa65dc2604a6143bf12963558958a7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -94,6 +94,19 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -110,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ducky _ (1)_0
+      name: Dark Ducky_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a4d6463d717ccf4598c615cb4572779
-      internalID: 1397814007
+      spriteID: 5d92bb2c78465be4b8cd15966ef76825
+      internalID: -833921481
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ducky _ (1)_1
+      name: Dark Ducky_1
       rect:
         serializedVersion: 2
         x: 1022
@@ -145,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10b606a36e82a2b48a37377e9ea9614e
-      internalID: 1604853490
+      spriteID: 396e2343774764f409166c97b0abfdf1
+      internalID: 866802907
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ducky _ (1)_2
+      name: Dark Ducky_2
       rect:
         serializedVersion: 2
         x: 2046
@@ -166,14 +179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c5cd0ecc5c55364585adc3aca6083ca
-      internalID: 1169493987
+      spriteID: 29f9647bcf256d448878eaaddbd3e312
+      internalID: -1949463645
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ducky _ (1)_3
+      name: Dark Ducky_3
       rect:
         serializedVersion: 2
         x: 0
@@ -187,14 +200,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4ea15c57c43f7b44a36d087b578d4ae
-      internalID: 521424843
+      spriteID: 67ae6f92f554ce148bd88247a30c2deb
+      internalID: -620555349
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ducky _ (1)_4
+      name: Dark Ducky_4
       rect:
         serializedVersion: 2
         x: 1022
@@ -208,14 +221,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee89f44de65d32a46a1c81f155c350ab
-      internalID: -1923580429
+      spriteID: 4afc2d37265c5bc469304965da5fd3f4
+      internalID: -1356118107
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ducky _ (1)_5
+      name: Dark Ducky_5
       rect:
         serializedVersion: 2
         x: 2046
@@ -229,14 +242,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 215175c9ea704c94599b5ec6bc76e1ad
-      internalID: 999812646
+      spriteID: 2186022435ba6c942ab1602b21648235
+      internalID: -2143493879
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ducky _ (1)_6
+      name: Dark Ducky_6
       rect:
         serializedVersion: 2
         x: 3070
@@ -250,8 +263,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1a0568ee4e5fc74b84971614b9bb4d6
-      internalID: -201431223
+      spriteID: 32935e06c407a914fb77b277d265610e
+      internalID: -974238243
       vertices: []
       indices: 
       edges: []
@@ -267,13 +280,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Ducky _ (1)_0: 1397814007
-      Ducky _ (1)_1: 1604853490
-      Ducky _ (1)_2: 1169493987
-      Ducky _ (1)_3: 521424843
-      Ducky _ (1)_4: -1923580429
-      Ducky _ (1)_5: 999812646
-      Ducky _ (1)_6: -201431223
+      Dark Ducky_0: -833921481
+      Dark Ducky_1: 866802907
+      Dark Ducky_2: -1949463645
+      Dark Ducky_3: -620555349
+      Dark Ducky_4: -1356118107
+      Dark Ducky_5: -2143493879
+      Dark Ducky_6: -974238243
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
