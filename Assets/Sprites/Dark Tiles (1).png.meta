@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4596fc80dd70e3643a1c1e051ac0e047
+guid: 14d8976737bbb2e4e9de41439b9386b0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Dark Tiles_0
+      name: Dark Tiles (1)_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 1024
-        width: 1024
-        height: 1024
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67f5f0e5cd885804c9dd0bf7cb780bda
-      internalID: 1878827346
+      spriteID: c96ddf5b66f01e1458750e0bdccb5a95
+      internalID: 1345823382
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Tiles_1
+      name: Dark Tiles (1)_1
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7078d8bc461843749b96d5d54d5ef4f2
+      internalID: -532430122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Tiles (1)_2
       rect:
         serializedVersion: 2
         x: 1024
-        y: 1024
-        width: 1024
-        height: 1024
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71bdc9c931e759148bcf200f366bc61a
-      internalID: -1223321085
+      spriteID: a3193ab3c5a660b429fab4a1fcb6f079
+      internalID: -1183322949
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Tiles_2
+      name: Dark Tiles (1)_3
       rect:
         serializedVersion: 2
-        x: 2048
-        y: 1024
-        width: 1024
-        height: 1024
+        x: 1536
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,41 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1dc7dde723294a84d918838c8dc93a85
-      internalID: -448899394
+      spriteID: 3c9182250722649489e411d599667e1e
+      internalID: -912694386
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Tiles_3
-      rect:
-        serializedVersion: 2
-        x: 3072
-        y: 1024
-        width: 1024
-        height: 1024
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f5cbdf3d7c121de45b45bb7fec46557b
-      internalID: -145425869
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Tiles_4
+      name: Dark Tiles (1)_4
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1024
-        height: 1024
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +221,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: feee3bec785839e41a7a851120b31164
-      internalID: -573936781
+      spriteID: 3e4da7516747a884092dbbefd533f1ea
+      internalID: 2103977492
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Tiles_5
+      name: Dark Tiles (1)_5
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b83f9e3b2d751149bbc213758d8eab4
+      internalID: -219305794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Tiles (1)_6
       rect:
         serializedVersion: 2
         x: 1024
         y: 0
-        width: 1024
-        height: 1024
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,20 +263,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4933d80580df294cbba92b20aa55e48
-      internalID: 1380796111
+      spriteID: fca3eccdd28fdab449945e6ee0b1b40d
+      internalID: 600138964
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Tiles_6
+      name: Dark Tiles (1)_7
       rect:
         serializedVersion: 2
-        x: 2048
+        x: 1536
         y: 0
-        width: 1024
-        height: 1024
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,29 +284,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 945498be4bd0c9447a0f4da8eb82f9df
-      internalID: -1301709284
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Tiles_7
-      rect:
-        serializedVersion: 2
-        x: 3072
-        y: 0
-        width: 1024
-        height: 1024
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2f7899dc67132d140a43122565abe418
-      internalID: 1165205738
+      spriteID: 38d9597009d0c2640a002e1496e74302
+      internalID: 61459334
       vertices: []
       indices: 
       edges: []
@@ -301,14 +301,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Dark Tiles_0: 1878827346
-      Dark Tiles_1: -1223321085
-      Dark Tiles_2: -448899394
-      Dark Tiles_3: -145425869
-      Dark Tiles_4: -573936781
-      Dark Tiles_5: 1380796111
-      Dark Tiles_6: -1301709284
-      Dark Tiles_7: 1165205738
+      Dark Tiles (1)_0: 1345823382
+      Dark Tiles (1)_1: -532430122
+      Dark Tiles (1)_2: -1183322949
+      Dark Tiles (1)_3: -912694386
+      Dark Tiles (1)_4: 2103977492
+      Dark Tiles (1)_5: -219305794
+      Dark Tiles (1)_6: 600138964
+      Dark Tiles (1)_7: 61459334
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
