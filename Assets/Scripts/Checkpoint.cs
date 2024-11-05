@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class CheckPoint : MonoBehaviour
 {
-    #region Public Variables
+    #region Public Variables 
+    // These regions were in the original code
 
     /// <summary>
     /// Indicate if the checkpoint is activated
@@ -36,10 +37,10 @@ public class CheckPoint : MonoBehaviour
         {
             if (cp != null) // Check if the checkpoint is not null
             {
-                CheckPoint checkpointComponent = cp.GetComponent<CheckPoint>();
+                CheckPoint checkpointComponent = cp.GetComponent<CheckPoint>(); // saving a little bit of typing
                 if (checkpointComponent != null && checkpointComponent.Activated)
                 {
-                    result = cp.transform.position;
+                    result = cp.transform.position; 
                     break;
                 }
             }
@@ -47,9 +48,9 @@ public class CheckPoint : MonoBehaviour
         return result;
     }
 
-    public void ResetCheckpoint()
+    public void ResetCheckpoint() // This technically doesn't fit into the region
     {
-         Activated = false; // Reseting stuff
+         Activated = false; // Resetting stuff
     }
     #endregion
 
@@ -63,8 +64,8 @@ public class CheckPoint : MonoBehaviour
     {
         foreach (GameObject cp in CheckPointsList)
         {
-            if (cp.GetComponent<CheckPoint>() != null) //Error prevention
-             { cp.GetComponent<CheckPoint>().Activated = false;
+            if (cp.GetComponent<CheckPoint>() != null) // Error prevention
+             { cp.GetComponent<CheckPoint>().Activated = false; // Deactivating previous
              }
         } 
 
@@ -82,15 +83,15 @@ public class CheckPoint : MonoBehaviour
     {
         if (CheckPointsList == null)
         {
-          CheckPointsList = GameObject.FindGameObjectsWithTag("CheckPoint").ToList();
+          CheckPointsList = GameObject.FindGameObjectsWithTag("CheckPoint").ToList(); // Not sure if this is useful anymore
         }  
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player")) // If it collides with the player
         {
-            ActivateCheckPoint();
+            ActivateCheckPoint(); // References function
         }
     }
 }

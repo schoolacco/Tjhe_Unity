@@ -43,21 +43,21 @@ public class Player : MonoBehaviour
         var absVelX = Mathf.Abs(body2D.velocity.x); //Creates a variable to store horizontal movement velocity (x)
         var absVelY = Mathf.Abs(body2D.velocity.y); //Creates a variable to store vertical movement velocity (y)
         var forceY = 0f; //Creates a variable to store force
-        Vector3 checkpointPosition = CheckPoint.GetActiveCheckPointPosition();
+        Vector3 checkpointPosition = CheckPoint.GetActiveCheckPointPosition(); // Updating checkpoint
           
         // Access the player's Y-axis position
         float playerYPosition = transform.position.y;
-        if (playerYPosition < -100)  //Check if the player has fallen below a certain position on the screen and return to the Splash Screen if true
-          if (checkpointPosition != Vector3.zero)
+        if (playerYPosition < -50)  //Check if the player has fallen below a certain position and respawn
+          if (checkpointPosition != Vector3.zero) // Aka, there's actually an activated checkpoint
             {
-                body2D.transform.position = checkpointPosition;
-                body2D.velocity = Vector2.zero;
-                alive = GetComponent<BoxCollider2D>();
-                alive.enabled = true;
+                body2D.transform.position = checkpointPosition; // Go to checkpoint
+                body2D.velocity = Vector2.zero; // No velocity
+                alive = GetComponent<BoxCollider2D>(); // obselete
+                alive.enabled = true; // obselete
             }
             else
             {
-              SceneManager.LoadScene("GameOver");
+              SceneManager.LoadScene("GameOver"); // Skill issue
             }
             // obselete
         if (absVelY <= standingThreshold) //Check if the player is standing on the ground or not
