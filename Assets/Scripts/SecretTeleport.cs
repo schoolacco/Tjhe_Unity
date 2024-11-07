@@ -6,7 +6,6 @@ public class SecretTeleport : MonoBehaviour
 {
     private MusicClass musiccontroller;
     public BoxCollider2D Collider2D;
-
     private void Start()
     {
         musiccontroller = FindObjectOfType<MusicClass>(); // possibly obselete
@@ -22,7 +21,8 @@ public class SecretTeleport : MonoBehaviour
         {
             Debug.Log("Interacted");            
             MusicClass.Instance.StopMusic();
-            SceneManager.LoadScene("Level_O1");
+            MusicController.Instance.ChangeMusic("Creo - Mantarave [TubeRipper.com]");
+            SceneManager.LoadScene("Mariana");
         }
     }
 }    

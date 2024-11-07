@@ -47,7 +47,7 @@ public class Player : MonoBehaviour
           
         // Access the player's Y-axis position
         float playerYPosition = transform.position.y;
-        if (playerYPosition < -50)  //Check if the player has fallen below a certain position and respawn
+        if (playerYPosition < -100)  //Check if the player has fallen below a certain position and respawn
           if (checkpointPosition != Vector3.zero) // Aka, there's actually an activated checkpoint
             {
                 body2D.transform.position = checkpointPosition; // Go to checkpoint

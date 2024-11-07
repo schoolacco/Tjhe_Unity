@@ -21,7 +21,6 @@ public class MusicClass : MonoBehaviour
         }
         else
         {
-            Destroy(gameObject);  // Destroy duplicate instance
         }
         
         PlayMusic(); // Start playing music
@@ -29,7 +28,7 @@ public class MusicClass : MonoBehaviour
 
     public void PlayMusic()
     {
-        if (_audioSource != null && !_audioSource.isPlaying)
+        if (_audioSource != null)
         {
             Debug.Log("Playing music...");
             _audioSource.Play();

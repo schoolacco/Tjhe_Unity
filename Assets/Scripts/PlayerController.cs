@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
         // Check if the right arrow key or 'D' key is pressed
         if (Input.GetKey("right") || Input.GetKey("d")){
             // Set the x component of the movement vector to 1 (right direction)
+            Debug.Log("Right works?");
             moving.x = 1;
         }
 
