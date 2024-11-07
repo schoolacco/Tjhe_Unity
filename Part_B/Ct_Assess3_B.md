@@ -496,14 +496,15 @@ END Load
 ## **Storyboards**
 ---
 ---
-### **Scene 1**
-![Scene 1]()
-### **Scene 2**
-![Scene 2]()
-### **Scene 3**
-![Scene 3]()
-### **Scene 4**
-![Scene 4]()
+### **Storyboard 1 - Menu**
+![Storyboard 1](Images/Storyboard1.jpg)
+### **Storyboard 2 - Battle Menu**
+![Storyboard 2](Images/Storyboard2.jpg)
+(This is the closest there is to a "level")
+### **Storyboard 3 - Game over**
+![Storyboard 3](Images/Storyboard3.jpg)
+### **Storyboard 4 - Whole Game Flowchart**
+![Whole Game Flowchart](Images/FinalStoryBoard.jpg)
 
 ---
 ---
@@ -511,7 +512,7 @@ END Load
 **THEJ END**
 ---
 
-(Go play my game if you haven't already)
+(Go play my platformer game if you haven't already)
 
 ---
 ---
